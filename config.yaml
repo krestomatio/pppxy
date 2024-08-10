@@ -1,0 +1,7 @@
+ppp_group:
+- listen_addr: ":31443"
+  backend_addr: "192.168.101.32:31443"
+  proxy_protocol_version: 1
+- listen_addr: ":31444"
+  backend_addr: "192.168.101.32:31443"
+  proxy_protocol_version: 1

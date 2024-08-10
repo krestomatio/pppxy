@@ -1,0 +1,24 @@
+run:
+  timeout: 5m
+linters:
+  enable:
+    - nakedret
+    - misspell
+    - ineffassign
+    - ginkgolinter
+    - goconst
+    - errcheck
+    - unparam
+    - staticcheck
+    - unused
+    - gosimple
+    - gosec
+    - dupl
+    - unconvert
+    - gocyclo
+    # - goimports
+    # - revive
+linters-settings:
+  dupl:
+    # tokens count to trigger issue, 150 by default
+    threshold: 300
